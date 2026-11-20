@@ -18,7 +18,7 @@ export function CoffeeCard({ coffee }: CoffeeCardProps) {
   }
 
   return (
-    <article className="relative flex h-[310px] w-[256px] flex-col items-center rounded-bl-[36px] rounded-br-[6px] rounded-tl-[6px] rounded-tr-[36px] bg-[var(--color-surface-2)]">
+    <article className="relative flex h-[310px] w-full max-w-[256px] flex-col items-center rounded-bl-[36px] rounded-br-[6px] rounded-tl-[6px] rounded-tr-[36px] bg-[var(--color-surface-2)]">
       <img
         src={coffee.image}
         alt={coffee.name}

@@ -61,7 +61,7 @@ export function Checkout() {
         <p className="text-[var(--color-text-muted)]">Seu carrinho está vazio.</p>
       ) : (
         <div className="flex flex-col gap-8 lg:flex-row">
-          <div className="flex-1 rounded-md bg-[var(--color-surface-2)] p-10">
+          <div className="flex-1 rounded-md bg-[var(--color-surface-2)] p-4 md:p-10">
             <DeliveryAddressForm
               onValid={handleValid}
               registerSubmit={(submit) => {
@@ -71,7 +71,7 @@ export function Checkout() {
           </div>
 
           <aside className="w-full lg:w-[448px]">
-            <div className="rounded-bl-[44px] rounded-br-[6px] rounded-tl-[6px] rounded-tr-[44px] bg-[var(--color-surface-2)] p-10">
+            <div className="rounded-bl-[44px] rounded-br-[6px] rounded-tl-[6px] rounded-tr-[44px] bg-[var(--color-surface-2)] p-4 md:p-10">
               {items.map((item, idx) => (
                 <div key={item.coffee.id}>
                   <CartItem item={item} />

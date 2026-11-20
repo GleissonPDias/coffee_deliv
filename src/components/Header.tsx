@@ -9,7 +9,7 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-30 bg-[var(--color-bg)]">
-      <div className="mx-auto flex max-w-[1120px] items-center justify-between gap-3 px-4 py-4 md:px-8 md:py-8">
+      <div className="mx-auto flex max-w-[1120px] items-center justify-between gap-2 px-3 py-3 md:gap-3 md:px-8 md:py-8">
         <Link to="/" aria-label="Coffee Delivery - Home">
           <img src={logo} alt="Coffee Delivery" className="h-10 w-auto" />
         </Link>
@@ -20,7 +20,7 @@ export function Header() {
               <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" />
               <circle cx="12" cy="9" r="2.5" />
             </svg>
-            <span className="text-[14px] text-[var(--color-accent-dark)]">Porto Alegre, RS</span>
+            <span className="hidden text-[14px] text-[var(--color-accent-dark)] sm:inline">Porto Alegre, RS</span>
           </div>
 
           <Link
