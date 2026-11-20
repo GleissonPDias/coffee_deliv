@@ -101,4 +101,6 @@ Fluxo completo: Home → adicionar cafés ao carrinho → Checkout (endereço co
 
 ## Deploy
 
-Publicar em Vercel ou Netlify (build: `npm run build`, output `dist/`).
+Aplicação publicada em: **https://coffee-deliv.vercel.app**
+
+Build: `npm run build` (output `dist/`). Hospedagem: Vercel.
