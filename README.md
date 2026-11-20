@@ -50,6 +50,8 @@ Referência: arquivo "Coffee Delivery | Projeto Final React" (Home frame 2:1550,
 
 ## Screenshots
 
+### Desktop
+
 | Home (Light) | Home (Dark) |
 |---|---|
 | ![Home Light](docs/screenshots/home-light.jpg) | ![Home Dark](docs/screenshots/home-dark.jpg) |
@@ -57,6 +59,12 @@ Referência: arquivo "Coffee Delivery | Projeto Final React" (Home frame 2:1550,
 | Checkout | Sucesso |
 |---|---|
 | ![Checkout](docs/screenshots/checkout.jpg) | ![Sucesso](docs/screenshots/success.jpg) |
+
+### Mobile
+
+| Home (Light) | Home (Dark) | Checkout |
+|---|---|---|
+| ![Mobile Home](docs/screenshots/mobile-home.jpg) | ![Mobile Dark](docs/screenshots/mobile-dark.jpg) | ![Mobile Checkout](docs/screenshots/mobile-checkout.jpg) |
 
 ## Tema e responsividade
 
