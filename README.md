@@ -62,9 +62,9 @@ Referência: arquivo "Coffee Delivery | Projeto Final React" (Home frame 2:1550,
 
 ### Mobile
 
-| Home (Light) | Home (Dark) | Checkout |
-|---|---|---|
-| ![Mobile Home](docs/screenshots/mobile-home.jpg) | ![Mobile Dark](docs/screenshots/mobile-dark.jpg) | ![Mobile Checkout](docs/screenshots/mobile-checkout.jpg) |
+| Home (Light) | Home (Dark) | Checkout | Sucesso |
+|---|---|---|---|
+| ![Mobile Home](docs/screenshots/mobile-home.jpg) | ![Mobile Dark](docs/screenshots/mobile-dark.jpg) | ![Mobile Checkout](docs/screenshots/mobile-checkout.jpg) | ![Mobile Success](docs/screenshots/mobile-success.jpg) |
 
 ## Tema e responsividade
 
