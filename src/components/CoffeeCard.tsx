@@ -1,6 +1,7 @@
 import { useState } from "react";
 import type { Coffee } from "../types";
 import { useCart } from "../contexts/CartContext";
+import { useToast } from "../contexts/ToastContext";
 import { QuantityInput } from "./QuantityInput";
 
 
@@ -10,10 +11,12 @@ interface CoffeeCardProps {
 
 export function CoffeeCard({ coffee }: CoffeeCardProps) {
   const { addItem } = useCart();
+  const { showToast } = useToast();
   const [quantity, setQuantity] = useState(1);
 
   function handleAdd() {
     addItem(coffee, quantity);
+    showToast(`${quantity} ${quantity === 1 ? "café adicionado" : "cafés adicionados"} ao carrinho`);
     setQuantity(1);
   }
 
@@ -57,7 +60,9 @@ export function CoffeeCard({ coffee }: CoffeeCardProps) {
             className="flex h-[38px] w-[38px] items-center justify-center rounded-md bg-[var(--color-accent-dark)] text-white transition hover:opacity-90"
           >
             <svg xmlns="http://www.w3.org/2000/svg" className="h-[22px] w-[22px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-              <path d="M12 5v14M5 12h14" />
+              <circle cx="9" cy="20" r="1.5" />
+              <circle cx="17" cy="20" r="1.5" />
+              <path d="M3 4h2l2.5 11h10l2-7H7" />
             </svg>
           </button>
         </div>

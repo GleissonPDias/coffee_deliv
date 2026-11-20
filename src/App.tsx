@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Header } from "./components/Header";
+import { Toast } from "./components/Toast";
 import { Home } from "./pages/Home";
 import { Checkout } from "./pages/Checkout";
 import { Success } from "./pages/Success";
@@ -9,6 +10,7 @@ export default function App() {
     <BrowserRouter>
       <div className="min-h-screen bg-[var(--color-bg)] text-[var(--color-text)]">
         <Header />
+        <Toast />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/checkout" element={<Checkout />} />
