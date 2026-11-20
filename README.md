@@ -48,6 +48,16 @@ Referência: arquivo "Coffee Delivery | Projeto Final React" (Home frame 2:1550,
 - **Resultado:** logo entregue como `src/assets/logo.svg` e favicon `public/favicon.svg`, seguindo o conceito do prompt (xícara de café + tipografia Baloo 2/Roboto, paleta amarelo + roxo), legível em dimensões reduzidas.
 - **Motivos da escolha:** paleta quente (café) contrastando com roxo (entrega/movimento); tipografia amigável e legível em tamanhos pequenos; formato SVG escalável e sem imagens quebradas.
 
+## Screenshots
+
+| Home (Light) | Home (Dark) |
+|---|---|
+| ![Home Light](docs/screenshots/home-light.jpg) | ![Home Dark](docs/screenshots/home-dark.jpg) |
+
+| Checkout | Sucesso |
+|---|---|
+| ![Checkout](docs/screenshots/checkout.jpg) | ![Sucesso](docs/screenshots/success.jpg) |
+
 ## Tema e responsividade
 
 - Light/dark mode com toggle no Header, persistido em `localStorage`, fallback `prefers-color-scheme`.
