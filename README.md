@@ -2,6 +2,23 @@
 
 Aplicação de e-commerce de cafeteria (catálogo, carrinho, checkout e confirmação de pedido) desenvolvida como projeto final da disciplina **Single Page Application (SPA)**.
 
+## Objetivos
+
+- Consolidar React, TypeScript, componentes, Props, Hooks, Context API, useReducer, imutabilidade, rotas, formulários, persistência local, estilização, boas práticas, testes e documentação.
+- Planejar antes de implementar; transformar protótipo em componentes; modelar estados e regras de negócio.
+- Construir fluxo completo de SPA (Home → Checkout → Sucesso) com tema claro/escuro e responsividade mobile.
+- Utilizar IA de forma crítica (logo, SPEC, arquitetura, revisão) e documentar o uso.
+
+## Decisões
+
+- **Estilização:** Tailwind CSS (em vez de styled-components do desafio original) — produtividade e consistência de tokens; registrado no `TECH_SPEC.md`.
+- **Frete:** valor fixo fictício de R$ 3,50 (350 centavos), definido em `src/utils/money.ts`.
+- **Quantidade no carrinho:** decrementar de 1 para 0 remove o item.
+- **Validação de CEP:** ViaCEP; auto-preenchimento de rua, bairro, cidade e UF; número e complemento manuais.
+- **Pagamento:** apenas informativo (crédito, débito, dinheiro), sem transação real.
+- **Pedido:** snapshot independente do carrinho (preservado após limpar o carrinho).
+- **Preços:** armazenados em centavos; formatação BRL com duas casas decimais.
+
 ## Stack
 
 - React + Vite + TypeScript
@@ -47,6 +64,10 @@ Referência: arquivo "Coffee Delivery | Projeto Final React" (Home frame 2:1550,
   > "A modern, minimalist logo for a coffee delivery brand named 'Coffee Delivery'. Flat design, a stylized coffee cup with steam and a subtle delivery/motion swoosh, warm yellow (#c47f17) and purple (#4b2995) color palette on a clean white background, vector-like, suitable for web header and favicon, no photorealism, crisp edges, centered composition, brand name 'Coffee Delivery' in a friendly rounded sans-serif font below the icon."
 - **Resultado:** logo entregue como `src/assets/logo.svg` e favicon `public/favicon.svg`, seguindo o conceito do prompt (xícara de café + tipografia Baloo 2/Roboto, paleta amarelo + roxo), legível em dimensões reduzidas.
 - **Motivos da escolha:** paleta quente (café) contrastando com roxo (entrega/movimento); tipografia amigável e legível em tamanhos pequenos; formato SVG escalável e sem imagens quebradas.
+
+## Demonstração do fluxo de compra
+
+Fluxo completo: Home → adicionar cafés ao carrinho → Checkout (endereço com auto-preenchimento por CEP + forma de pagamento) → Confirmação do pedido. Pode ser gravado localmente com o app em execução (`npm run dev`) em http://localhost:5173.
 
 ## Screenshots
 
