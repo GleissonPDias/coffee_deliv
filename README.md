@@ -52,6 +52,7 @@ Ver `docs/TECH_SPEC.md` (seção 3).
 - `docs/TECH_SPEC.md` — especificação técnica
 - `docs/TASK_SPEC.md` / `docs/TASKS_SPEC.md` — plano de tarefas
 - `AGENTS.md` — diretrizes para o assistente de IA
+- `docs/AI_USAGE.md` — registro detalhado do uso de IA (prompts, decisões, evidências)
 
 ## Figma
 
